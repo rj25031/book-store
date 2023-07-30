@@ -4,14 +4,12 @@ body {
     color: black;
     text-align: center;
 }
-#all-in{
-    display: inline-block;
-    box-shadow: 0px 0px 20px 5px black;
-    width: 98%;
-}
+
 
 .nav-top {
     background-color: #fff;
+    position: sticky;
+    top: 0%;
 }
 
 .nav-search {
@@ -33,7 +31,9 @@ body {
     padding: 5px 10px;
     margin: 0px;
 }
-
+#search-input:focus{
+    outline: none;
+}
 #search-btn {
     border: solid 1px red;
     font-size: 20px;
@@ -103,6 +103,26 @@ li,a {
 #home{
     color: black;
 }
+#publisher {
+    display: grid;
+    grid-template-columns: repeat(4,220px);
+    grid-gap: 10px;
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+}
+
+.dropdown-option{
+    display: inline-block;
+}
+.arrow{
+    display: inline-block;
+    color: black;
+    rotate: 90deg;
+    margin: 0;
+    width: auto;
+    height: auto;
+}
 
 /* section one */
 
@@ -112,10 +132,8 @@ li,a {
 }
 .slide-img{
     width: 95%;
-    height: 500px;
+    height: 520px;
     transition: all 0.6s ease ;
-    animation-name: fade;
-    animation-duration: 1.5s;
 }
 .prev,.next{
     cursor: pointer;
@@ -142,10 +160,6 @@ li,a {
     background-color: rgba(90, 88, 88, 0.811);
 }
   
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
   #new-arr{
     font-size: 2em;
     margin: 10px 0;
@@ -160,7 +174,9 @@ li,a {
   }
 
 /* section two */
-
+#two{
+    margin-top: 30px;
+}
 
 .btn{
     box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.214);
@@ -170,14 +186,14 @@ li,a {
     font-size: 20px;
 }
 
-.all{
+.red{
     background-color: red;
 }
 .book-stall{
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 96%;
+    width: 94%;
 }
 
 .book{
@@ -189,4 +205,5 @@ li,a {
 .delete{
     text-decoration: line-through;
 }
+
 
